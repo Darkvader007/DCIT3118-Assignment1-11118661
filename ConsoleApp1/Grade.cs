@@ -46,5 +46,26 @@ namespace ConsoleApp1
             }
         }
 
-    
+    public class Ticket
+    {
+
+        public int age;
+        public string TicketPrice = "10 cedis";
+
+
+        public void CheckPrice()
+        {
+            Console.WriteLine("Enter Your Age");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if (age <= 12 || age >= 65)
+            {
+                TicketPrice = " 7 cedis";
+            }
+
+            Console.WriteLine($"{TicketPrice}");
+
+        }
+    }
+
 }
