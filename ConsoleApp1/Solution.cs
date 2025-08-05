@@ -68,4 +68,44 @@ namespace ConsoleApp1
         }
     }
 
+    public class Triangle
+    {
+
+        public int side1;
+        public int side2;
+        public int side3;
+
+
+
+
+        public void CheckType()
+        {
+            Console.WriteLine(" Enter the three sides of the triangle:");
+            side1 = Convert.ToInt32(Console.ReadLine());
+            side2 = Convert.ToInt32(Console.ReadLine());
+            side3 = Convert.ToInt32(Console.ReadLine());
+
+            if (side1 == side2 && side2 == side3)
+            {
+                Console.WriteLine("Equilateral");
+            }
+            else if (side1 == side2)
+            {
+                Console.WriteLine("Isosceles");
+            }
+            else if (side1 == side3)
+            {
+                Console.WriteLine("Isosceles");
+            }
+            else if (side2 == side3)
+            {
+                Console.WriteLine("Isoceles");
+            }
+            else
+            {
+                Console.WriteLine("Scalene");
+            }
+        }
+    }
+
 }
